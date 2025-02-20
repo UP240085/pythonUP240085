@@ -104,3 +104,86 @@ for x in valores_x:
 x = float(input("Ingresa el valor de x: "))
 y = calcular_y(x)
 print("El valor de y es:", y)
+
+#12- Largo de "python" y "dragon" y falsa comparación
+print("12- Largo de 'python' y 'dragon' y falsa comparación")
+len_python = len('python')
+len_dragon = len('dragon')
+falsy_comparison = len_python == len_dragon
+print(f"Length of 'python': {len_python}")
+print(f"Length of 'dragon': {len_dragon}")
+print(f"Falsy comparison (length of 'python' == length of 'dragon'): {falsy_comparison}")
+
+# 13- Checar si "on" está en "python" y "dragon"
+print("13- Checar si 'on' está en 'python' y 'dragon'")
+on_in_both = 'on' in 'python' and 'on' in 'dragon'
+print(f"'on' in both 'python' and 'dragon': {on_in_both}")
+
+# 14- Checar si "jargon" está en la frase
+print("14- Checar si 'jargon' está en la frase")
+frase = "I hope this course is not full of jargon"
+jargon_in_frase = 'jargon' in frase
+print(f"'jargon' in the frase: {jargon_in_frase}")
+
+# 15- No hay "on" en "python" y "dragon"
+print("15- No hay 'on' en 'python' y 'dragon'")
+no_on_in_both = 'on' not in 'python' and 'on' not in 'dragon'
+print(f"'on' not in both 'python' and 'dragon': {no_on_in_both}")
+
+#16- Convertir la longitud de "python" a float y luego a string
+print("16- Convertir la longitud de 'python' a float y luego a string")
+len_python = len('python')
+len_python = float(len_python)
+len_python = str(len_python)
+print(f"Length of 'python' as string: {len_python}")
+
+#17- Checar si un número es par
+print("17- Checar si un número es par")
+numero = int(input("Ingresa un número: "))
+es_par = numero % 2 == 0
+print(f"El número {numero} es par: {es_par}")
+
+#18- Check if floor division of 7 by 3 is equal to int converted value of 2.7 
+print("18- Check if floor division of 7 by 3 is equal to int converted value of 2.7")
+floor_division = 7 // 3
+int_conversion = int(2.7)
+equal = floor_division == int_conversion
+print(f"Floor division of 7 by 3: {floor_division}")
+print(f"Int converted value of 2.7: {int_conversion}")
+print(f"Equal: {equal}")
+
+#19- Checar si el tipi de "10" es igual al tipo de 10
+print("19- Checar si el tipo de '10' es igual al tipo de 10")
+type_comparison = type('10') == type(10)
+print(f"Type of '10' is equal to type of 10: {type_comparison}")
+
+#20-Checar si int("9.8") es igual a 10
+print("20-Checar si int('9.8') es igual a 10")
+try:
+    int_value = int('9.8')
+except ValueError:
+    int_value = None
+comparison = int_value == 10
+print(f"int('9.8') is equal to 10: {comparison}")
+
+#21- Calcular pago basado en horas y tarifa por hora
+print("21- Calcular pago basado en horas y tarifa por hora")
+horas = float(input("Ingresa el número de horas trabajadas: "))
+tarifa = float(input("Ingresa la tarifa por hora: "))
+pago = horas * tarifa
+print(f"El pago es: {pago}")
+ 
+#22- Escribe un script que le pida al usuario que ingrese el número de años.
+#  Calcula el número de segundos que una persona puede vivir. 
+print("22- Calcular el número de segundos que una persona puede vivir")
+años = int(input("Ingresa el número de años: "))
+segundos_por_año = 365 * 24 * 60 * 60
+segundos_vividos = años * segundos_por_año
+print(f"Una persona puede vivir {segundos_vividos} segundos")
+
+#23- Script para mostrar tabla 
+print("23- Script para mostrar tabla")
+
+print("a  a^0  a^1  a^2  a^3")
+for a in range(1, 6):
+    print(f"{a}  {a**0}  {a**1}  {a**2}  {a**3}")
