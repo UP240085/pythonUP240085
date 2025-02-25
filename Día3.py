@@ -106,7 +106,7 @@ y = calcular_y(x)
 print("El valor de y es:", y)
 
 #12- Largo de "python" y "dragon" y falsa comparación
-print("12- Largo de 'python' y 'dragon' y falsa comparación")
+print("12- Largo de 'python' y 'dragon' y falsa comparación") 
 len_python = len('python')
 len_dragon = len('dragon')
 falsy_comparison = len_python == len_dragon
@@ -134,8 +134,11 @@ print(f"'on' not in both 'python' and 'dragon': {no_on_in_both}")
 print("16- Convertir la longitud de 'python' a float y luego a string")
 len_python = len('python')
 len_python = float(len_python)
+print(type(len_python))
 len_python = str(len_python)
+print(type(len_python))
 print(f"Length of 'python' as string: {len_python}")
+print(type(len_python))
 
 #17- Checar si un número es par
 print("17- Checar si un número es par")
