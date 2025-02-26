@@ -68,7 +68,7 @@ print(company.split())
 #14- "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon" split the string at the comma.
 print("14- 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' split the string at the comma.")
 companies = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon"
-print(companies.split(','))
+print(companies.split(","))
 
 #15- What is the character at index 0 in the string Coding For All.
 print("15- What is the character at index 0 in the string Coding For All.")
@@ -97,3 +97,99 @@ print(acronym)
 #20- Use index to determine the position of the first occurrence of C in Coding For All.
 print("20- Use index to determine the position of the first occurrence of C in Coding For All.")
 print(company.index('C'))
+
+#21- Use index to determine the position of the first occurrence of F in Coding For All.
+print("21- Use index to determine the position of the first occurrence of F in Coding For All.")
+print(company.index('F'))
+
+#22- Use rfind to determine the position of the last occurrence of l in Coding For All People.
+print("22- Use rfind to determine the position of the last occurrence of l in Coding For All People.")
+sentence = "Coding For All People"
+print(sentence.rfind('l'))
+
+#23- Use index or find to find the position of the first occurrence of the word 'because' in the following sentence:\n'You cannot end a sentence with because because because is a conjunction'
+print("23- Use index or find to find the position of the first occurrence of the word 'because' in the following sentence:\n'You cannot end a sentence with because because because is a conjunction'")
+sentence = 'You cannot end a sentence with because because because is a conjunction'
+print(sentence.index('because'))
+
+#24- Use rindex to find the position of the last occurrence of the word because in the following sentence:\n'You cannot end a sentence with because because because is a conjunction'
+print("24- Use rindex to find the position of the last occurrence of the word because in the following sentence:\n'You cannot end a sentence with because because because is a conjunction'")
+sentence = 'You cannot end a sentence with because because because is a conjunction'
+print(sentence.rindex('because'))
+
+#25- Slice out the phrase 'because because because' in the following sentence:\n'You cannot end a sentence with because because because is a conjunction'
+print("25- Slice out the phrase 'because because because' in the following sentence:\n'You cannot end a sentence with because because because is a conjunction'")
+sentence = 'You cannot end a sentence with because because because is a conjunction'
+word = 'because'
+firstWordPos = sentence.index(word)
+lastWordPos = sentence.rindex(word) + len(word)+1
+print(sentence)
+print(sentence[firstWordPos:lastWordPos])
+ 
+#print(sentence.index('because'))
+#print(sentence.rindex('because'))
+#print(sentence[31:47])
+
+
+#26- Find the position of the first occurrence of the word 'because' in the following sentence:\n'You cannot end a sentence with because because because is a conjunction'
+print("26- Find the position of the first occurrence of the word 'because' in the following sentence:\n'You cannot end a sentence with because because because is a conjunction'")
+sentence = 'You cannot end a sentence with because because because is a conjunction'
+print(sentence.find('because'))
+
+#27- Slice out the phrase 'because because because' in the following sentence:\n'You cannot end a sentence with because because because is a conjunction'
+print("27- Slice out the phrase 'because because because' in the following sentence:\n'You cannot end a sentence with because because because is a conjunction'")
+sentence = 'You cannot end a sentence with because because because is a conjunction'
+word = 'because'
+firstWordPos = sentence.find(word)
+lastWordPos = sentence.rfind(word) + len(word)+1
+print(sentence)
+print(sentence[firstWordPos:lastWordPos])
+
+#28- Does ''Coding For All' start with a substring Coding?
+print("28- Does 'Coding For All' start with a substring Coding?")
+print(company.startswith('Coding'))
+
+#29- Does 'Coding For All' end with a substring coding?
+print("29- Does 'Coding For All' end with a substring coding?")
+print(company.endswith('coding'))
+
+#30- '   Coding For All      '  , remove the left and right trailing spaces in the given string.
+print("30- '   Coding For All      '  , remove the left and right trailing spaces in the given string.")
+sentence = '   Coding For All      '
+print(sentence.strip())
+
+#31- Which one of the following variables return True when we use the method isidentifier():\n30DaysOfPython, thirty_days_of_python
+print("31- Which one of the following variables return True when we use the method isidentifier():\n30DaysOfPython, thirty_days_of_python")
+print('30DaysOfPython'.isidentifier())
+print('thirty_days_of_python'.isidentifier())
+print('thirty days of python' + " is a valid variable name")
+
+#32- The following list contains the names of some of python libraries:\n['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']\nJoin the list with a hash with space string.
+print("32- The following list contains the names of some of python libraries:\n['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']\nJoin the list with a hash with space string.")
+libraries = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+print('# '.join(libraries))
+
+#33- Use the new line escape sequence to separate the following sentence into two lines. I am enjoying this challenge.I just wonder what is next.
+print("33- Use the new line escape sequence to separate the following sentence into two lines. I am enjoying this challenge.I just wonder what is next.")
+sentence = "I am enjoying this challenge.\nI just wonder what is next."
+print(sentence)
+
+#34- Use a tab escape sequence to write the following lines.
+#Name      Age     Country  City
+#Asabeneh  250     Finland Helsinki
+print("34- Use a tab escape sequence to write the following lines.")
+print("Name, Age, Country, City")
+print("Asabeneh, 250, Finland, Helsinki")
+print("Tab escape sequence: ")
+print("\tName\t\tAge\tCountry\t\tCity")
+print("\tAsabeneh\t250\tFinland\t\tHelsinki")
+
+#35- Use the string formatting method to display the following:\nradius = 10 \narea = 3.14 * radius ** 2 \nThe area of a circle with radius 10 is 314 meters square.
+print("35- Use the string formatting method to display the following:radius = 10 area = 3.14 * radius ** 2 The area of a circle with radius 10 is 314 meters square.")
+print("\nradius = 10 \narea = 3.14 * radius ** 2 \nThe area of a circle with radius 10 is 314 meters square.")
+
+#36- Operation formatting method
+print("36- Operation formatting method")
+
+
+
