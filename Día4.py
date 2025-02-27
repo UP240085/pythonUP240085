@@ -125,11 +125,6 @@ firstWordPos = sentence.index(word)
 lastWordPos = sentence.rindex(word) + len(word)+1
 print(sentence)
 print(sentence[firstWordPos:lastWordPos])
- 
-#print(sentence.index('because'))
-#print(sentence.rindex('because'))
-#print(sentence[31:47])
-
 
 #26- Find the position of the first occurrence of the word 'because' in the following sentence:\n'You cannot end a sentence with because because because is a conjunction'
 print("26- Find the position of the first occurrence of the word 'because' in the following sentence:\n'You cannot end a sentence with because because because is a conjunction'")
