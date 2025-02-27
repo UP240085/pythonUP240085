@@ -190,6 +190,13 @@ print("\nradius = 10 \narea = 3.14 * radius ** 2 \nThe area of a circle with rad
 
 #36- Operation formatting method
 print("36- Operation formatting method")
-
-
+num1 = 8
+num2 = 6
+print(f'{num1} + {num2} = {num1 + num2}')
+print(f'{num1} - {num2} = {num1 - num2}')
+print(f'{num1} * {num2} = {num1 * num2}')
+print(f'{num1} / {num2} = {num1 / num2}')
+print(f'{num1} % {num2} = {num1 % num2}')
+print(f'{num1} // {num2} = {num1 // num2}')
+print(f'{num1} ** {num2} = {num1 ** num2}')
 
