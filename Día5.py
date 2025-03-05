@@ -1,6 +1,7 @@
 #1 Declare an empty list
 print("1- Declare an empty list")
 Emptylist = []
+print(Emptylist)
 
 #2 Declare a list with more than 5 items
 print("2- Declare a list with more than 5 items")
@@ -19,6 +20,7 @@ print(list[-1])
 #5 Declare a list called mixed_data_types, put your(name), age, height, marital status, and address
 print("5- Declare a list called mixed_data_types, put your(name), age, height, marital status, and address")
 mixed_data_types = ["Brandon", 18, 1.66, "Soltero", "Simon Bolivar #149"]
+print(mixed_data_types)
 
 #6 Declare a list variable named it_companies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
 print("6- Declare a list variable named it_companies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon")
@@ -131,5 +133,64 @@ back_end = ['Node','Express', 'MongoDB']
 print("26- Join the following lists:")
 print(front_end)
 print(back_end)
-full_stack = front_end + back_end
+join_list = front_end + back_end
+print(join_list)
+
+#27 After joining the lists in question 26. Copy the joined list and assign it to a variable full_stack then insert Python and SQL after Redux
+print("27- After joining the lists in question 26. Copy the joined list and assign it to a variable full_stack then insert Python and SQL after Redux")
+full_stack = join_list.copy()
 print(full_stack)
+full_stack.insert(full_stack.index("Redux")+1, "Python")
+full_stack.insert(full_stack.index("Python")+1, "SQL")
+print(full_stack)
+
+#Exercise level 2
+print("Exercise level 2")
+
+#1 The following is a list of 10 students ages:
+print("1- The following is a list of 10 students ages:")
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 23]
+print(ages)
+
+#Sort the list and find the min and max age
+#Add the min age and the max age again to the list
+#Find the median age (one middle item or two middle items divided by two)
+#Find the average age (sum of all items divided by their number )
+#Find the range of the ages (max minus min)
+#Compare the value of (min - average) and (max - average), use abs() method
+print("Sort the list and find the min and max age")
+ages.sort()
+print(ages)
+print("Find the min age")
+print(ages[0])
+print("Find the max age")
+print(ages[-1])
+print("Add the min age and the max age again to the list")
+min=ages[0]
+max=ages[-1]
+ages.append(min)
+ages.append(max)
+print(ages)
+print("Find the median age")
+ages.sort() 
+print(ages)
+len_ages = len(ages)
+print (f"El número de datos es: {len_ages}")
+median = (ages[len_ages//2] + ages[len_ages//2-1]) / 2
+print(median)
+print("Find the average age")
+ages
+n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12 = ages
+average = (n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8 + n9 + n10 + n11 + n12) / len_ages
+print(average)
+print("Find the range of the ages, max - min")
+print(f"El menro es: {min}")
+print(f"El mayor es: {max}")
+range = max - min
+print(f"El rango es: {range}")
+print("Compare the value of (min - average) and (max - average), use abs() method")
+min_average = abs (min - average)
+print(min_average)
+max_average = abs (max - average)
+print(max_average)
+
