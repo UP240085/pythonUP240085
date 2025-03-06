@@ -204,5 +204,6 @@ import countries as c
 print(c.countries)
 countries = c.countries
 len_countries = len(countries)
+print(len_countries)
 #Divide the countries list into two equal lists if it is even if not one more country for the first half.
 #['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']. Unpack the first three countries and the rest as scandic countries.
