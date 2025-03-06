@@ -190,3 +190,4 @@ print("23- Script para mostrar tabla")
 print("a  a^0  a^1  a^2  a^3")
 for a in range(1, 6):
     print(f"{a}  {a**0}  {a**1}  {a**2}  {a**3}")
+

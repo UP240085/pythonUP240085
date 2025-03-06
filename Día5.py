@@ -184,13 +184,25 @@ n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12 = ages
 average = (n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8 + n9 + n10 + n11 + n12) / len_ages
 print(average)
 print("Find the range of the ages, max - min")
-print(f"El menro es: {min}")
+print(f"El menor es: {min}")
 print(f"El mayor es: {max}")
 range = max - min
 print(f"El rango es: {range}")
 print("Compare the value of (min - average) and (max - average), use abs() method")
 min_average = abs (min - average)
-print(min_average)
+print(f"Valor 1: {min_average}")
 max_average = abs (max - average)
-print(max_average)
+print(f"Valor 2: {max_average}")
+print(f"El valor 2 es igual al 1: {max_average==min_average}")
+print(f"El valor 2 no es igual al 1: {max_average!=min_average}")
+print(f"El valor 2 es mayor que el 1: {max_average>min_average}")
+print(f"El valor 2 es menor que el 1: {max_average<min_average}")
 
+#Find the middle country(ies) in the countries list
+print("Find the middle country(ies) in the countries list")
+import countries as c
+print(c.countries)
+countries = c.countries
+len_countries = len(countries)
+#Divide the countries list into two equal lists if it is even if not one more country for the first half.
+#['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']. Unpack the first three countries and the rest as scandic countries.
