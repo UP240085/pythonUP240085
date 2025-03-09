@@ -206,4 +206,16 @@ countries = c.countries
 len_countries = len(countries)
 print(len_countries)
 #Divide the countries list into two equal lists if it is even if not one more country for the first half.
+middle = len_countries // 2
+first_half = countries[:middle]
+second_half = countries[middle:]
+print(first_half)
+print(second_half)
 #['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']. Unpack the first three countries and the rest as scandic countries.
+print("['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']. Unpack the first three countries and the rest as scandic countries.")
+countries = ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']
+first, second, third, *scandic = countries
+print(first)
+print(second)
+print(third)
+print(scandic)
