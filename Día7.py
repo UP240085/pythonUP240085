@@ -8,13 +8,52 @@ age = [22, 19, 24, 25, 26, 24, 25, 24]
 
 #1- Find the length of the set it_companies
 print("1- Find the length of the set it_companies")
+print(f"La longitud de \"it_companies\" es: {len(it_companies)} ")
 
 #2- Add 'Twitter' to it_companies
 print("2- Add 'Twitter' to it_companies")
+it_companies.add("Twitter")
+print(it_companies)
 
 #3- Insert multiple IT companies at once to the set it_companies
 print("3- Insert multiple IT companies at once to the set it_companies")
+it_companies.update(["Tesla", "Nissan"])
+print(it_companies)
+
+#Otra forma 
+two_companies = ["Aston Martin", "Danonino"]
+it_companies.update(two_companies)
+print(it_companies)
 
 #4- Remove one of the companies from the set it_companies
+print("4- Remove one of the companies from the set it_companies")
+it_companies.remove("Danonino")
+print(it_companies)
+it_companies.discard("Danonino")
 
 #5- What is the difference between remove and discard
+print("5- What is the difference between remove and discard")
+print("Si el discard no ecnuentra el elemento a eliminar, el programa seguirá, el remove dará un error si no encuentra  el argumento")
+
+#Exercises: Level 2
+
+#1- Join A and B
+print("1- Join A and B")
+
+#2- Find A intersection B
+print("2- Find A intersection B")
+
+#3- Is A subset of B
+print("3- Is A subset of B")
+
+#4- Are A and B disjoint sets
+print("4- Are A and B disjoint sets")
+
+#5- Join A with B and B with A
+print("5- Join A with B and B with A")
+
+#6- What is the symmetric difference between A and B
+print("6- What is the symmetric difference between A and B")
+
+#7- Delete the sets completely
+print("7- Delete the sets completely")
