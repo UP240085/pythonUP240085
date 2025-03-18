@@ -5,6 +5,7 @@ B = {19, 22, 20, 25, 26, 24, 28, 27}
 age = [22, 19, 24, 25, 26, 24, 25, 24]
 
 #Exercises: Level 1
+print("Exercises: Level 1")
 
 #1- Find the length of the set it_companies
 print("1- Find the length of the set it_companies")
@@ -39,21 +40,38 @@ print("Si el discard no ecnuentra el elemento a eliminar, el programa seguirá, 
 
 #1- Join A and B
 print("1- Join A and B")
+A.union(B)
+print(A)
 
 #2- Find A intersection B
 print("2- Find A intersection B")
+A.intersection(B)
+print(A)
 
 #3- Is A subset of B
 print("3- Is A subset of B")
+A.issubset(B)
+print(A)
 
 #4- Are A and B disjoint sets
 print("4- Are A and B disjoint sets")
+A.isdisjoint(B)
+print(A)
 
 #5- Join A with B and B with A
 print("5- Join A with B and B with A")
+A.union(B)
+print(A)
+B.union(A)
+print(B)
 
 #6- What is the symmetric difference between A and B
 print("6- What is the symmetric difference between A and B")
+A.symmetric_difference(B)
+print(A)
 
 #7- Delete the sets completely
 print("7- Delete the sets completely")
+del A
+del B
+
