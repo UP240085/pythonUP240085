@@ -187,7 +187,8 @@ print(f"Una persona puede vivir {segundos_vividos} segundos")
 #23- Script para mostrar tabla 
 print("23- Script para mostrar tabla")
 
-print("a  a^0  a^1  a^2  a^3")
-for a in range(1, 6):
-    print(f"{a}  {a**0}  {a**1}  {a**2}  {a**3}")
+print("1 1 1 1 1")
+print("2 1 2 4 8")
+print("4 1 4 16 64")
+print("5 1 5 25 125")
 
