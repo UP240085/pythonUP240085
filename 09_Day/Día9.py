@@ -19,3 +19,32 @@ elif my_age < your_age:
     print(f"You are {your_age - my_age} years older than me")
 else:
     print("We are the same age")
+
+#3- Get two numbers from the user using input prompt. If a is greater than b return a is greater than b, if a is less b return a is smaller than b, else a is equal to b
+print("3- Get two numbers from the user using input prompt. If a is greater than b return a is greater than b, if a is less b return a is smaller than b, else a is equal to b")
+a = (input("Enter the first number: "))
+b = (input("Enter the second number: "))
+if a > b:
+    print("a is greater than b")
+elif a < b:
+    print("a is smaller than b")
+else:
+    print("a is equal to b")
+
+#Exercises: Level 2
+
+#1- Write a code which gives grade to students according to their scores:
+print("1- Write a code which gives grade to students according to their scores:")
+score = int(input("Enter your score: "))
+if score >= 80:
+    print("A")
+elif score >= 70:
+    print("B")
+elif score >=60
+    print("C")         
+elif score >=50
+    print("D")
+else          
+    print("F")
+
+    
