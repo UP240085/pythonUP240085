@@ -83,7 +83,7 @@ person={
     'last_name': 'Tovar',
     'age': 18,
     'country': 'México',
-    'is_married': False,
+    'is_married': True,
     'skills': ['JavaScript', 'React', "Node", "Python", "MongoDB"],
     'address': {
         'street': 'Simon Bolivar 149',
@@ -103,4 +103,14 @@ if 'skills' in person:
         print("He is a front end developer")
     elif "Node" and "Python" and "MongoDB" in skills:
         print("He is backend developer")
+    elif "React" and "Node" and "MongoDB" in skills:
+        print("He is a fullstack developer")      
+    else:
+        print("Unknown title")
 
+married = person["is_married"]
+country = person["country"]
+if married == True and country == "México":
+    print(f"{person["first_name"]} {person['last_name']} lives in {person['country']}. He is married")
+else:
+    print("He doesn´t live in México or he is´nt married ")
