@@ -41,3 +41,15 @@ for language, count in most_common_languages:
     print(f"{language}: {count}")
 
 #Find the 10 most populated countries in the world
+Test = {}
+for country in data:
+    for name in country["name"]:
+        Test[country["name"]] = country["population"]
+
+
+Most_populated_countries = (sorted(Test.items() , key=lambda item: item[1], reverse=True))
+Top10 = dict(Most_populated_countries[:10])
+
+print("The 10 most populated countries in the world are: ")
+for country, population in Top10.items():
+     print(f"{country}: {population}")
