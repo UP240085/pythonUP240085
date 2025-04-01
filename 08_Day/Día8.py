@@ -48,3 +48,5 @@ print(student)
 #11- Delete one of the dictionaries
 print("11- Delete one of the dictionaries")
 del student
+
+print("Revisado")
