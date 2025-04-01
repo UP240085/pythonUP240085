@@ -113,4 +113,4 @@ country = person["country"]
 if married == True and country == "México":
     print(f"{person["first_name"]} {person['last_name']} lives in {person['country']}. He is married")
 else:
-    print("He doesn´t live in México or he is´nt married ")
+    print("He doesnt live in México or he isnt married ")
