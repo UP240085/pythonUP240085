@@ -126,4 +126,4 @@ print(get_first_ten_countries(countries))
 print("Declare a get_last_ten_countries function that returns the last ten countries in the countries list.")
 def get_last_ten_countries(countries):
     return countries[-10:]
-print(get_last_ten_countries(countries))
+print(get_last_ten_countries(countries)) 
