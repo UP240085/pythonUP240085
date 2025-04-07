@@ -60,3 +60,5 @@ print(calculate_mode([1, 2, 3, 4, 5, 5]))
 print(calculate_range([1, 2, 3, 4, 5]))
 print(calculate_variance([1, 2, 3, 4, 5]))
 print(calculate_std([1, 2, 3, 4, 5]))
+
+print("revisado")

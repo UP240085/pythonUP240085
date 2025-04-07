@@ -32,3 +32,4 @@ def generate_colors(n=5, color_type='hex'):
 print("Hexadecimal Colors:", generate_colors(5, 'hex'))
 print("RGB Colors:", generate_colors(5, 'rgb'))
 
+print("revisado")

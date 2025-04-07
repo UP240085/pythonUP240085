@@ -15,3 +15,5 @@ for i in range(101):
         odd = odd + i
 
 print(f"The sum of all evens is: {even} and the sum of all odds is: {odd}")
+
+print("revisado")

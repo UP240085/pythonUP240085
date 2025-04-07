@@ -63,3 +63,5 @@ slope = lambda x1, y1, x2, y2: (y2 - y1) / (x2 - x1) if x2 != x1 else None
 print("Slope:", slope(1, 2, 3, 4))
 y_intercept = lambda m, x, y: y - m * x if m is not None else None
 print("Y-Intercept:", y_intercept(1, 2, 4))
+
+print("revisado")

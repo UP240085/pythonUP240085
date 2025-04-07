@@ -32,3 +32,6 @@ print("Most spoken languages:", sort_languages(data)[:10])
 def sort_population(data):
     return sorted(data, key=lambda x: x['population'], reverse=True)
 print("Most populated countries:", [country['name'] for country in sort_population(data)[:10]])
+
+
+print("revisado")

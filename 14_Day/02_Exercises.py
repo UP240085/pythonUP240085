@@ -127,3 +127,5 @@ print("Declare a get_last_ten_countries function that returns the last ten count
 def get_last_ten_countries(countries):
     return countries[-10:]
 print(get_last_ten_countries(countries)) 
+
+print("revisado")
